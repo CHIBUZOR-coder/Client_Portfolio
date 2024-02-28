@@ -9,6 +9,10 @@ module.exports = {
       },
       margin: {
         ppaa: "180px",
+        force:"100px",
+      },
+      width:{
+        fat:"400px"
       },
 
       colors: {

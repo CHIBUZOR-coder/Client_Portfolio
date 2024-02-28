@@ -14,6 +14,10 @@ const sbtn = document.querySelector(".sbtn");
 const cbtn = document.querySelector(".cbtn");
 const home_btn = document.querySelectorAll(".rsp");
 const socials = document.querySelectorAll('.social');
+const show = document.querySelectorAll('.show');
+const show_child = document.querySelectorAll(".show_child");
+
+
 
 hbtn.addEventListener("click", () => {
   if (nav_home.classList.contains("hidden")) {

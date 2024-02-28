@@ -28,6 +28,7 @@
 .box {
     height: 35rem;
     box-shadow: -0.3px 0.7px 10px rgba(13, 13, 13, 2);
+    border-radius: 2px;
 }
 
 .navbar_con {
@@ -42,11 +43,47 @@ nav {
     margin-left: -5px;
 }
 
+.show{
+@apply relative h-28  transition ease-in-out duration-700 
+}
+.show:hover{
+    background-color: rgb(37, 46, 46, 0.6);
+}
 
+.show_child{
+    @apply relative h-28 w-full  transition ease-in-out duration-700 hover:scale-110 flex justify-center items-center
+}
 .Tcontainer {
     @apply pt-4
 }
 
+
+.child1 {
+    background: url(images/ecomerce.jpg) center center/ cover;
+}
+
+.child2 {
+    background: url(images/radio.jpg) center center/ cover;
+}
+.child3{
+    background: url(images/imagesss.jpg) center center/ cover;;
+}
+.child4{
+    background: url(images/food.jpg) center center/ cover;
+}
+
+.child5 {
+    background: url(images/school.jpg) center center/ cover;
+}
+
+
+.child6 {
+    background: url(images/market.jpg) center center/ cover;
+}
+
+.more{
+@apply hidden
+}
 
 /* 
  
