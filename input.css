@@ -6,41 +6,100 @@
 
 
 
-.main_content{
+.main_content {
     position: relative;
     width: 90%;
     min-height: 50px;
     margin-left: auto;
     margin-right: auto;
-   
+
 }
-.box{
+
+.box {
     position: relative;
-    width:100%;
+    width: 100%;
 
 }
-.box{
-    @apply mt-10 
+
+.box {
+    @apply mt-10
 }
 
-.box{
+.box {
     height: 35rem;
+    box-shadow: -0.3px 0.7px 10px rgba(13, 13, 13, 2);
 }
 
-nav{
+.navbar_con {
+    @apply pt-5
+}
+
+nav {
     @apply mt-2 md:mt-auto
 }
 
-    .svg_num{
-        margin-left: -5px;
-    }
+.svg_num {
+    margin-left: -5px;
+}
 
-/*  
-.aContainer{
+
+.Tcontainer {
+    @apply pt-4
+}
+
+
+/* 
+ 
+.home_con{
+    
+    background-color: blueviolet;
+   
+}  */
+
+.nl {
+    padding-left: 2px;
+}
+
+.link {
+    @apply rounded-full transition ease-in-out duration-1000 hover:scale-110 hover:bg-slate-700 w-14 text-xs
+}
+
+.link {
+    border: 2px solid #787878;
+    color: #787878;
+    background-color: rgba(35, 31, 31, 0.92);
+}
+/* 
+.container{
+    background-color: rgba(35, 31, 31, 0.4);
+} */
+
+.home{
+    background: url(images/jpeg-optimizer_18429.jpg) center center/ cover;
+}
+.profile_pics{
+    background: url(images/young-man-with-hoodie_23-2147646522.jpg) center center/ cover;
+}
+
+.social {
+    @apply mx-4 h-7 w-7 transition ease-in-out duration-500
+}
+
+.social {
+    /* background-color: var(--color--grey-4); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    align-items: center;
+    box-shadow: var(--box--shadow-2);
+    cursor: pointer;
 
     
-}  */
-/* 
-.phonne{
-    @apply justify-start
-} */
+
+    i {
+        pointer-events: none;
+        color: white;
+    }
+
+}

@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       height: {
         big_h: "20rem",
+        ppa: "400px",
+      },
+      margin: {
+        ppaa: "180px",
       },
 
       colors: {

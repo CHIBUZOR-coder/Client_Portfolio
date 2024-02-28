@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <script src="https://kit.fontawesome.com/d81501edd7.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body data-primary-color="#797979" data-secondary-color="#0d0d0d" activeColor="rgb(39,174,96)">
-        <div class="main_content my-8 ">
+        <div class="main_content  my-8 ">
             <div class=" box home" id="home">
                 <div class=" px-0 md:px-4 ">
-                    <div class=" block md:hidden">
+                    <div class="Tcontainer  block md:hidden">
                         <div class="togglebtn px-4 py-1 h-8 flex  justify-between">
                             <div class=" nav_text font-bold flex ">
                                 <div class=" ">
@@ -41,7 +42,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="nav_home hidden md:block">
+                    <div class="nav_home navbar_con hidden md:block">
                         <div class="container  pl-4 md:pl-auto mx-auto flex flex-col  md:flex-row md:justify-between ">
                             <!--NavigationLinks-->
                             <nav class=" flex justify-start md:justify-center   gap-x-1 md:gap-4 flex-col md:flex-row">
@@ -62,8 +63,8 @@
                                 </div>
                             </nav>
                             <!-- Logo -->
-                            <!-- <div class=" nav_text font-bold flex ">
-                                  <div class=" ">
+                            <div class=" md:flex hidden nav_text font-bold ">
+                                <div class=" ">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -75,15 +76,51 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/>
                                     </svg>
                                 </div>
-                                <p>+234-9074639302</p> -->
+                                <p class="">+234-9074639302</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class=" home_con w-full md:w-6/12 h-60 mt-20 md:mt-ppaa ml-0 md:ml-5  relative">
+                    <div class="big_text"></div>
+                    <div class="btn_con pl-4">
+                        <div class="nl">
+                            <p class=" text-2xl">Jason</p>
+                        </div>
+                        <div class="flex flex-col justify-start ">
+                            <p class="font-extrabold pl-0 text-4xl">Martin</p>
+                        </div>
+                        <div class="nl">
+                            <p class="text-xs">Web Developer</p>
+                        </div>
+                        <div class="btn_links mt-3 flex flex-grow gap-4">
+                            <button class=" link rsp " type="button">Resume</button>
+                            <button class=" link " type="button">Portfolio</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="home_footer mr-auto ml-auto mt-4 mb-8 w-60 h-20  relative flex items-center justify-center">
+                    <a href="https://www.linkedin.com/in/chibuzor-emekalam-936737215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+                      " target="blank" class="social  hover:scale-125   hover:bg-green-400 ">
+                        <i class="fa-brands fa-linkedin fa-beat-fade"></i>
+                    </a>
+                    <a href="https://www.facebook.com/chibuzor.emekalam.5" target="blank" class="social hover:scale-125 hover:bg-green-400 ">
+                        <i class="fa-brands fa-facebook-f fa-beat-fade"></i>
+                    </a>
+                    <a href="https://x.com/GreateAzeil?t=f4XB2DoOskVwLIklevwwgQ&s=09
+" target="blank" class="social  hover:scale-125 hover:bg-green-400 ">
+                        <i class="fa-brands fa-x-twitter fa-beat-fade"></i>
+                    </a>
+                    <a href="https://wa.link/8s06vt" target="blank" class="social  hover:scale-125 hover:bg-green-400 ">
+                        <i class="fa-brands fa-whatsapp fa-beat-fade"></i>
+                    </a>
+                </div>
             </div>
+            <!-- About -->
             <div class=" box about" id="about">
                 <div class=" px-0 md:px-4 ">
                     <div class=" block md:hidden">
-                        <div class="togglebtn px-4 py-1 h-8 flex  justify-between">
+                        <div class="Tcontainer  px-4 py-1 h-8 flex  justify-between">
                             <div class=" nav_text font-bold flex ">
                                 <div class=" ">
                                     <svg
@@ -113,15 +150,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="nav_about hidden md:block">
+                    <div class="nav_about navbar_con hidden md:block">
                         <div class="container  pl-4 md:pl-auto mx-auto flex flex-col  md:flex-row md:justify-between ">
                             <!--NavigationLinks-->
                             <nav class=" flex justify-start md:justify-center   gap-x-1 md:gap-4 flex-col md:flex-row">
                                 <div class="aContainer">
-                                    <a href="#home" class=" nav_text txt">Home</a>
+                                    <a href="#home" class=" nav_text ">Home</a>
                                 </div>
                                 <div class="aContainer">
-                                    <a href="#about" class=" nav_text ">About</a>
+                                    <a href="#about" class=" nav_text txt">About</a>
                                 </div>
                                 <div class="aContainer">
                                     <a href="#portfolio" class=" nav_text">portfolio</a>
@@ -134,8 +171,8 @@
                                 </div>
                             </nav>
                             <!-- Logo -->
-                            <!-- <div class=" nav_text font-bold flex ">
-                                  <div class=" ">
+                            <div class=" md:flex hidden nav_text font-bold ">
+                                <div class=" ">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -147,16 +184,38 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/>
                                     </svg>
                                 </div>
-                                <p>+234-9074639302</p> -->
+                                <p class="">+234-9074639302</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="about_con relative w-full pt-5 px-5 grid grid-cols-1 md:grid-cols-2">
+                    <div class="statement px-2">
+                        <div class="head">
+                            <p>About Me</p>
+                            <p>jason@gmail.com</p>
+                        </div>
+                        <div class="words">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+         non recusandae laudantium debitis inventore neque deleniti, officia
+          magni aliquid nam explicabo numquam voluptate quod ea commodi totam,
+           cumque tempore quaerat!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="profil_picsCon relative px-2">
+                        <div class="profile_pics w-10/12 h-52 md:h-ppa"></div>
+                        <p>Florida | Orlando</p>
+                        <p>12529 State | Road 535</p>
+                    </div>
+                </div>
             </div>
-
-             <div class=" box portfolio" id="portfolio">
+            <!-- Portfolio -->
+            <div class=" box relative portfolio" id="portfolio">
                 <div class=" px-0 md:px-4 ">
                     <div class=" block md:hidden">
-                        <div class="togglebtn px-4 py-1 h-8 flex  justify-between">
+                        <div class="Tcontainer  px-4 py-1 h-8 flex  justify-between">
                             <div class=" nav_text font-bold flex ">
                                 <div class=" ">
                                     <svg
@@ -186,18 +245,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="nav_portfolio hidden md:block">
+                    <div class="nav_portfolio navbar_con hidden md:block">
                         <div class="container  pl-4 md:pl-auto mx-auto flex flex-col  md:flex-row md:justify-between ">
                             <!--NavigationLinks-->
                             <nav class=" flex justify-start md:justify-center   gap-x-1 md:gap-4 flex-col md:flex-row">
                                 <div class="aContainer">
-                                    <a href="#home" class=" nav_text txt">Home</a>
+                                    <a href="#home" class=" nav_text">Home</a>
                                 </div>
                                 <div class="aContainer">
                                     <a href="#about" class=" nav_text ">About</a>
                                 </div>
                                 <div class="aContainer">
-                                    <a href="#portfolio" class=" nav_text">portfolio</a>
+                                    <a href="#portfolio" class=" nav_text txt">portfolio</a>
                                 </div>
                                 <div class="aContainer">
                                     <a href="#Services" class=" nav_text">Services</a>
@@ -207,8 +266,8 @@
                                 </div>
                             </nav>
                             <!-- Logo -->
-                            <!-- <div class=" nav_text font-bold flex ">
-                                  <div class=" ">
+                            <div class=" md:flex hidden nav_text font-bold ">
+                                <div class=" ">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -220,16 +279,25 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/>
                                     </svg>
                                 </div>
-                                <p>+234-9074639302</p> -->
+                                <p class="">+234-9074639302</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="portfolio_con relative pt-5 w-3/6 mx-auto grid gap-2 grid-cols-2 md:grid-cols-3">
+                    <div class="show  h-28 bg-slate-400"></div>
+                    <div class="show  h-28 bg-slate-400"></div>
+                    <div class="show  h-28 bg-slate-400"></div>
+                    <div class="show  h-28 bg-slate-400"></div>
+                    <div class="show  h-28 bg-slate-400"></div>
+                    <div class="show  h-28 bg-slate-400"></div>
+                </div>
             </div>
-
-             <div class=" box about" id="about">
+            <!-- Services -->
+            <div class=" box Services" id="Services">
                 <div class=" px-0 md:px-4 ">
                     <div class=" block md:hidden">
-                        <div class="togglebtn px-4 py-1 h-8 flex  justify-between">
+                        <div class="Tcontainer  px-4 py-1 h-8 flex  justify-between">
                             <div class=" nav_text font-bold flex ">
                                 <div class=" ">
                                     <svg
@@ -259,12 +327,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="nav_service hidden md:block">
+                    <div class="nav_service navbar_con hidden md:block">
                         <div class="container  pl-4 md:pl-auto mx-auto flex flex-col  md:flex-row md:justify-between ">
                             <!--NavigationLinks-->
                             <nav class=" flex justify-start md:justify-center   gap-x-1 md:gap-4 flex-col md:flex-row">
                                 <div class="aContainer">
-                                    <a href="#home" class=" nav_text txt">Home</a>
+                                    <a href="#home" class=" nav_text ">Home</a>
                                 </div>
                                 <div class="aContainer">
                                     <a href="#about" class=" nav_text ">About</a>
@@ -273,15 +341,15 @@
                                     <a href="#portfolio" class=" nav_text">portfolio</a>
                                 </div>
                                 <div class="aContainer">
-                                    <a href="#Services" class=" nav_text">Services</a>
+                                    <a href="#Services" class=" nav_text txt">Services</a>
                                 </div>
                                 <div class="aContainer">
                                     <a href="#Contact" class=" nav_text">Contact</a>
                                 </div>
                             </nav>
                             <!-- Logo -->
-                            <!-- <div class=" nav_text font-bold flex ">
-                                  <div class=" ">
+                            <div class=" md:flex hidden nav_text font-bold ">
+                                <div class=" ">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -293,17 +361,17 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/>
                                     </svg>
                                 </div>
-                                <p>+234-9074639302</p> -->
+                                <p class="">+234-9074639302</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-             <div class=" box about" id="about">
+            <!-- Contact -->
+            <div class=" box contact" id="contact">
                 <div class=" px-0 md:px-4 ">
                     <div class=" block md:hidden">
-                        <div class="togglebtn px-4 py-1 h-8 flex  justify-between">
+                        <div class="Tcontainer  px-4 py-1 h-8 flex  justify-between">
                             <div class=" nav_text font-bold flex ">
                                 <div class=" ">
                                     <svg
@@ -333,12 +401,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="nav_contact hidden md:block">
+                    <div class="nav_contact navbar_con hidden md:block">
                         <div class="container  pl-4 md:pl-auto mx-auto flex flex-col  md:flex-row md:justify-between ">
                             <!--NavigationLinks-->
                             <nav class=" flex justify-start md:justify-center   gap-x-1 md:gap-4 flex-col md:flex-row">
                                 <div class="aContainer">
-                                    <a href="#home" class=" nav_text txt">Home</a>
+                                    <a href="#home" class=" nav_text ">Home</a>
                                 </div>
                                 <div class="aContainer">
                                     <a href="#about" class=" vv nav_text ">About</a>
@@ -350,12 +418,12 @@
                                     <a href="#Services" class=" nav_text">Services</a>
                                 </div>
                                 <div class="aContainer">
-                                    <a href="#Contact" class=" nav_text">Contact</a>
+                                    <a href="#Contact" class=" nav_text txt">Contact</a>
                                 </div>
                             </nav>
                             <!-- Logo -->
-                            <!-- <div class=" nav_text font-bold flex ">
-                                  <div class=" ">
+                            <div class=" md:flex hidden nav_text font-bold ">
+                                <div class=" ">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -367,7 +435,8 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/>
                                     </svg>
                                 </div>
-                                <p>+234-9074639302</p> -->
+                                <p class="">+234-9074639302</p>
+                            </div>
                         </div>
                     </div>
                 </div>
