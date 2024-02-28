@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+.main_content{
+    position: relative;
+    width: 90%;
+    min-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.box{
+    position: relative;
+    width:100%;
+
+}
+.box{
+    @apply mt-10 
+}
+
+.box{
+    height: 35rem;
+}
+
+nav{
+    @apply mt-2 md:mt-auto
+}
+
+    .svg_num{
+        margin-left: -5px;
+    }
+
+/*  
+.aContainer{
+
+    
+}  */
+/* 
+.phonne{
+    @apply justify-start
+} */
