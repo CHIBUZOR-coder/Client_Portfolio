@@ -49,14 +49,17 @@
 .navbar_con {
     @apply pt-5
 }
+ 
 .navbar_con{
-    position: absolute;
+position: absolute;
     background-color: rgba(24, 22, 22, 0.3);
-    top: 0;
-}
+ 
+  
+    
+} 
 
 nav {
-    @apply mt-2 md:mt-auto
+    @apply mt-2 md:mt-auto absolute top-1 md:top-0 
 }
 
 .svg_num {

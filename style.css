@@ -2617,15 +2617,17 @@ video {
   padding-top: 1.25rem;
   position: absolute;
   background-color: rgba(24, 22, 22, 0.3);
-  top: 0;
 }
 
 nav {
+  position: absolute;
+  top: 0.25rem;
   margin-top: 0.5rem;
 }
 
 @media (min-width: 768px) {
   nav {
+    top: 0px;
     margin-top: auto;
   }
 }
