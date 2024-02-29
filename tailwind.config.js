@@ -12,12 +12,7 @@ module.exports = {
         force:"100px",
       },
       width:{
-        fat:"450px",
-        stat:"50px"
-      },
-
-      height:{
-        statt:"50px",
+        fat:"450px"
       },
       backgroundColor:{
         nav:" rgba(24, 22, 22, 1)  ",

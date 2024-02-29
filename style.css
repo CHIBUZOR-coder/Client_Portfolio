@@ -2613,31 +2613,6 @@ video {
   border-radius: 2px;
 }
 
-.navbar_con {
-  z-index: 10;
-  background-color:  rgba(24, 22, 22, 1)  ;
-  padding-top: 1.25rem;
-}
-
-@media (min-width: 768px) {
-  .navbar_con {
-    background-color: transparent;
-  }
-}
-
-nav {
-  position: absolute;
-  top: 0.25rem;
-  margin-top: 0.5rem;
-}
-
-@media (min-width: 768px) {
-  nav {
-    top: 0px;
-    margin-top: auto;
-  }
-}
-
 .svg_num {
   margin-left: -5px;
 }
@@ -3134,13 +3109,6 @@ textarea {
   }
 }
 
-@media (max-width: 699.9px) {
-  .status-bar {
-    width: 70px;
-    height: 70px;
-  }
-}
-
 /* 
 .con_footer{
     
@@ -3255,6 +3223,10 @@ textarea {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-ppa {
+    height: 400px;
   }
 
   .md\:w-6\/12 {

@@ -44,17 +44,8 @@
     min-height: 38rem;
     box-shadow: -0.3px 0.7px 10px rgba(13, 13, 13, 2);
     border-radius: 2px;
-}
 
-.navbar_con {
-    @apply pt-5 bg-nav md:bg-transparent z-10
 }
- 
-
-nav {
-    @apply mt-2 md:mt-auto absolute top-1 md:top-0 
-}
-
 .svg_num {
     margin-left: -5px;
 }
@@ -243,12 +234,6 @@ nav {
 
     }
 }
-
-
-
-
-
-
 
 /* 
 
@@ -532,7 +517,7 @@ nav {
 }
 
 form {
-
+ 
     margin: 20px auto;
     background: #fff;
     padding: 20px;
@@ -572,23 +557,10 @@ textarea {
 
 
     &:hover {
-        background-color: rgba(35, 31, 31, 0.92);
-        ;
+        background-color: rgba(35, 31, 31, 0.92);;
         color: #ccc;
     }
 }
-
-@media (max-width: 699.9px) {
-
-    .status-bar {
-        width: 70px;
-        height: 70px;
-    }
-}
-
-
-
-
 /* 
 .con_footer{
     
