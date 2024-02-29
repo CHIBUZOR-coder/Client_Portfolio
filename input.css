@@ -3,7 +3,22 @@
 @tailwind utilities;
 
 
-
+:root {
+    --color-primary: #101320;
+    --color--secondary: #27ae60;
+    --color--white: white;
+    --color--black: black;
+    --color--grey0: #f8f8f8;
+    --color--grey-1: #dbe1e8;
+    --color--grey-2: #b2becd;
+    --color--grey-3: #6c7983;
+    --color--grey-4: #454e56;
+    --color--grey-5: #2a2e35;
+    --color--grey-6: #12181b;
+    --br-sm-2: 14px;
+    --box--shadow-1: -4px 4px 10px rgba(0, 0, 0, 0.5);
+    --box--shadow-2: 0 3px 15px rgba(0, 0, 0.3);
+}
 
 
 .main_content {
@@ -26,7 +41,7 @@
 }
 
 .box {
-    height: 35rem;
+    min-height: 38rem;
     box-shadow: -0.3px 0.7px 10px rgba(13, 13, 13, 2);
     border-radius: 2px;
 }
@@ -43,16 +58,18 @@ nav {
     margin-left: -5px;
 }
 
-.show{
-@apply relative h-28  transition ease-in-out duration-700 
-}
-.show:hover{
-    background-color: rgb(37, 46, 46, 0.6);
+.show {
+    @apply relative h-28 transition ease-in-out duration-700
 }
 
-.show_child{
-    @apply relative h-28 w-full  transition ease-in-out duration-700 hover:scale-110 flex justify-center items-center
+.show_child {
+    @apply relative h-28 w-full transition ease-in-out duration-700 hover:scale-110 flex justify-center items-center
 }
+
+.more {
+    @apply hover:scale-110 transition ease-out duration-700
+}
+
 .Tcontainer {
     @apply pt-4
 }
@@ -65,15 +82,18 @@ nav {
 .child2 {
     background: url(images/radio.jpg) center center/ cover;
 }
-.child3{
-    background: url(images/imagesss.jpg) center center/ cover;;
+
+.child3 {
+    background: url(images/imagesss.jpg) center center/ cover;
+    ;
 }
-.child4{
+
+.child4 {
     background: url(images/food.jpg) center center/ cover;
 }
 
 .child5 {
-    background: url(images/school.jpg) center center/ cover;
+    background: url(images/schoolweb.jpg) center center/ cover;
 }
 
 
@@ -81,8 +101,31 @@ nav {
     background: url(images/market.jpg) center center/ cover;
 }
 
-.more{
-@apply hidden
+
+.childd1 {
+    background: url(images/webdev.jpg) center center/ cover;
+}
+
+.childd2 {
+    background: url(images/app.jpg) center center/ cover;
+}
+
+.childd3 {
+    background: url(images/ai.jpg) center center/ cover;
+
+}
+
+.childd4 {
+    background: url(images/uiux1.jpg) center center/ cover;
+}
+
+.childd5 {
+    background: url(images/coin.jpg) center center/ cover;
+}
+
+
+.childd6 {
+    background: url(images/dataa.jpg) center center/ cover;
 }
 
 /* 
@@ -106,15 +149,17 @@ nav {
     color: #787878;
     background-color: rgba(35, 31, 31, 0.92);
 }
+
 /* 
 .container{
     background-color: rgba(35, 31, 31, 0.4);
 } */
 
-.home{
+.home {
     background: url(images/jpeg-optimizer_18429.jpg) center center/ cover;
 }
-.profile_pics{
+
+.profile_pics {
     background: url(images/young-man-with-hoodie_23-2147646522.jpg) center center/ cover;
 }
 
@@ -132,11 +177,235 @@ nav {
     box-shadow: var(--box--shadow-2);
     cursor: pointer;
 
-    
+
 
     i {
         pointer-events: none;
         color: white;
     }
 
+}
+
+
+.show {
+
+
+    transition: all 0.4s ease-in-out;
+
+    .more {
+        z-index: -2;
+    }
+
+
+    &:hover {
+        background-color: rgb(37, 46, 46, 0.6);
+        z-index: 10;
+
+        .show {
+            z-index: 2;
+        }
+
+        .more {
+            z-index: 3;
+            transition: all 0.4s ease-in-out;
+
+        }
+
+
+    }
+}
+
+/* 
+
+  .bl:hover {
+      border-radius: 5px;
+      box-shadow: var(--box--shadow-1);
+      transform: translateY(-10px);
+      transition: all 0.4s ease-in-out;
+      filter: grayscale(50%);
+      transform: scale(1.05);
+      z-index: 2;
+
+      #txt {
+          font-size: x-small;
+      }
+
+      .dropp {
+          transform: translateY(-5px);
+          z-index: 10;
+          font-weight: 900;
+          font-size: 1.3rem;
+          filter: grayscale(0);
+          visibility: visible;
+          transition: all 0.4s ease-in-out;
+      }
+  } */
+
+.progress{
+    @apply ml-auto mr-auto
+}
+
+.progress-container {
+
+    position: relative;
+    width: 80%;
+    margin: 0 auto 50px auto;
+    gap: 15px;
+    z-index: 2;
+
+    .progress {
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        position: relative;
+        width: 35%;
+
+        .status-line {
+            position: relative;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+      
+
+
+            z-index: -1;
+            gap: 10px;
+
+            .num {
+                color: #27ae60;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                transform: translateY(50%);
+            }
+
+
+            .lan_num:hover {
+                background-color: rgba(49, 38, 53, 0.2);
+
+            }
+
+            .status-bar {
+                position: relative;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* background-color: transparent !important; */
+
+                height: 50px;
+                box-shadow: var(--box--shadow-2) !important;
+                border-radius: 100%;
+                /* Set border-radius to 50% for a perfect circle */
+                width: 50px;
+
+                .lan_num {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center !important;
+                  
+
+                  
+                }
+
+                .htm {
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    box-shadow: var(--box--shadow-2) !important;
+                    width: 100%;
+                    height: 100%;
+                    border: 1.4px solid var(--color--secondary);
+                    border-radius: 100%;
+                }
+
+                .css {
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    box-shadow: var(--box--shadow-2) !important;
+                    width: 100%;
+                    height: 100%;
+                    border: 1.4px solid var(--color--secondary);
+                    border-radius: 100%;
+                }
+
+                .javascript {
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    box-shadow: var(--box--shadow-2) !important;
+                    width: 100%;
+                    height: 100%;
+                    border: 1.4px solid var(--color--secondary);
+                    border-radius: 100%;
+                }
+
+                .bot {
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    box-shadow: var(--box--shadow-2) !important;
+                    width: 100%;
+                    height: 100%;
+                    border: 1.4px solid var(--color--secondary);
+                    border-radius: 100%;
+                }
+
+                .github {
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    box-shadow: var(--box--shadow-2) !important;
+                    width: 100%;
+                    height: 100%;
+                    border: 1.4px solid var(--color--secondary);
+                    border-radius: 100%;
+                }
+
+                .git {
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    box-shadow: var(--box--shadow-2) !important;
+                    width: 100%;
+                    height: 100%;
+                    border: 1.4px solid var(--color--secondary);
+                    border-radius: 100%;
+                }
+
+                .tailwind {
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    box-shadow: var(--box--shadow-2) !important;
+                    width: 100%;
+                    height: 100%;
+                    border: 1.4px solid var(--color--secondary);
+                    border-radius: 100%;
+                }
+
+                .react {
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    box-shadow: var(--box--shadow-2) !important;
+                    width: 100%;
+                    height: 100%;
+                    border: 1.4px solid red;
+                    border-radius: 100%;
+                }
+
+
+
+
+
+            }
+
+
+        }
+    }
 }

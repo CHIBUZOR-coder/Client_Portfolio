@@ -12,7 +12,7 @@ module.exports = {
         force:"100px",
       },
       width:{
-        fat:"400px"
+        fat:"450px"
       },
 
       colors: {
