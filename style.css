@@ -2615,6 +2615,9 @@ video {
 
 .navbar_con {
   padding-top: 1.25rem;
+  position: absolute;
+  background-color: rgba(24, 22, 22, 0.3);
+  top: 0;
 }
 
 nav {
@@ -3123,6 +3126,13 @@ textarea {
   }
 }
 
+@media (max-width: 699.9px) {
+  .status-bar {
+    width: 70px;
+    height: 70px;
+  }
+}
+
 /* 
 .con_footer{
     
@@ -3237,10 +3247,6 @@ textarea {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:h-ppa {
-    height: 400px;
   }
 
   .md\:w-6\/12 {

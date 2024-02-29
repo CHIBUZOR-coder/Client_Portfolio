@@ -7,6 +7,8 @@ const nav_portfolio = document.querySelector(".nav_portfolio");
 const nav_service = document.querySelector(".nav_service");
 const nav_skill = document.querySelector(".nav_skill");
  const nav_timeline = document.querySelector(".nav_timeline");
+ const nav_contact = document.querySelector(".nav_contact");
+ 
 const abtn = document.querySelector(".abtn");
 const hbtn = document.querySelector(".hbtn");
 const btn = document.querySelectorAll(".btn");

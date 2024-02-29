@@ -49,6 +49,11 @@
 .navbar_con {
     @apply pt-5
 }
+.navbar_con{
+    position: absolute;
+    background-color: rgba(24, 22, 22, 0.3);
+    top: 0;
+}
 
 nav {
     @apply mt-2 md:mt-auto
@@ -242,6 +247,12 @@ nav {
 
     }
 }
+
+
+
+
+
+
 
 /* 
 
@@ -525,7 +536,7 @@ nav {
 }
 
 form {
- 
+
     margin: 20px auto;
     background: #fff;
     padding: 20px;
@@ -565,10 +576,23 @@ textarea {
 
 
     &:hover {
-        background-color: rgba(35, 31, 31, 0.92);;
+        background-color: rgba(35, 31, 31, 0.92);
+        ;
         color: #ccc;
     }
 }
+
+@media (max-width: 699.9px) {
+
+    .status-bar {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+
+
 /* 
 .con_footer{
     
