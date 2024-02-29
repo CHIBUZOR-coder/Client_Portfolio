@@ -46,6 +46,11 @@
     border-radius: 2px;
 
 }
+
+
+.navbar_con{
+    @apply absolute md:relative top-14 transition ease-in-out duration-700 w-36  md:w-auto z-10 bg-nav md:bg-transparent md:top-2
+}
 .svg_num {
     margin-left: -5px;
 }

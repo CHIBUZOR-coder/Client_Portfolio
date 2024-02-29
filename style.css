@@ -2613,6 +2613,28 @@ video {
   border-radius: 2px;
 }
 
+.navbar_con {
+  position: absolute;
+  top: 3.5rem;
+  z-index: 10;
+  width: 9rem;
+  background-color:  rgba(24, 22, 22, 0.9)  ;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  .navbar_con {
+    position: relative;
+    top: 0.5rem;
+    width: auto;
+    background-color: transparent;
+  }
+}
+
 .svg_num {
   margin-left: -5px;
 }

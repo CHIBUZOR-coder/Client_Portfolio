@@ -15,7 +15,7 @@ module.exports = {
         fat:"450px"
       },
       backgroundColor:{
-        nav:" rgba(24, 22, 22, 1)  ",
+        nav:" rgba(24, 22, 22, 0.9)  ",
       },
 
       colors: {
