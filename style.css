@@ -3087,7 +3087,6 @@ nav {
 }
 
 form {
-  max-width: 400px;
   margin: 20px auto;
   background: #fff;
   padding: 20px;
@@ -3246,6 +3245,10 @@ textarea {
 
   .md\:w-6\/12 {
     width: 50%;
+  }
+
+  .md\:w-80 {
+    width: 20rem;
   }
 
   .md\:w-fat {
