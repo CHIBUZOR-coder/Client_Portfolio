@@ -50,13 +50,6 @@
     @apply pt-5 bg-nav md:bg-transparent z-10
 }
  
-.navbar_con{
-position: absolute;
-
- 
-  
-    
-} 
 
 nav {
     @apply mt-2 md:mt-auto absolute top-1 md:top-0 
