@@ -47,12 +47,12 @@
 }
 
 .navbar_con {
-    @apply pt-5
+    @apply pt-5 bg-nav md:bg-transparent z-10
 }
  
 .navbar_con{
 position: absolute;
-    background-color: rgba(24, 22, 22, 0.3);
+
  
   
     

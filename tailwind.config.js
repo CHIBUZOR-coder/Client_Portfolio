@@ -19,6 +19,9 @@ module.exports = {
       height:{
         statt:"50px",
       },
+      backgroundColor:{
+        nav:" rgba(24, 22, 22, 1)  ",
+      },
 
       colors: {
         greyishWhite: "#f5f5f5", // You can adjust the hex value as needed
