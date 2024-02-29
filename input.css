@@ -66,6 +66,12 @@ nav {
     @apply relative h-28 w-full transition ease-in-out duration-700 hover:scale-110 flex justify-center items-center
 }
 
+.show_child {
+    border-radius: 2px;
+    box-shadow: -0.3px 0.7px 10px rgba(13, 13, 13, 2);
+    ;
+}
+
 .more {
     @apply hover:scale-110 transition ease-out duration-700
 }
@@ -163,6 +169,28 @@ nav {
     background: url(images/young-man-with-hoodie_23-2147646522.jpg) center center/ cover;
 }
 
+.portfolio {
+    background: url(images/homepic.jpg) center center/ cover;
+
+}
+
+.Services {
+    background: url(images/option.jpg) center center/ cover;
+}
+
+.skills {
+    background: url(images/jpeg-op.jpg) center center/ cover;
+}
+
+
+.timeline {
+    background: url(images/contech.jpg) center center/ cover;
+}
+
+.contact {
+    background: url(images/contech.jpg) center center/ cover;
+}
+
 .social {
     @apply mx-4 h-7 w-7 transition ease-in-out duration-500
 }
@@ -241,10 +269,14 @@ nav {
       }
   } */
 
-.progress{
+.progress {
     @apply ml-auto mr-auto
 }
 
+/* 
+.skill-con{
+    background-color: rgba(27, 27, 29, 0.1);
+} */
 .progress-container {
 
     position: relative;
@@ -266,7 +298,7 @@ nav {
             width: 100%;
             flex-direction: row;
             align-items: center;
-      
+
 
 
             z-index: -1;
@@ -281,6 +313,10 @@ nav {
                 transform: translateY(50%);
             }
 
+            .lan_num {
+                background-color: rgba(27, 27, 29, 0.8);
+                z-index: 4;
+            }
 
             .lan_num:hover {
                 background-color: rgba(49, 38, 53, 0.2);
@@ -306,9 +342,9 @@ nav {
                     display: flex;
                     justify-content: center;
                     align-items: center !important;
-                  
 
-                  
+
+
                 }
 
                 .htm {
@@ -409,3 +445,131 @@ nav {
         }
     }
 }
+
+.timeline2 {
+
+    margin: 0 auto 0 auto !important;
+    position: relative;
+    width: 80%;
+
+    .timeline-items {
+        background-color: transparent;
+        position: relative;
+
+        .timeline-icon {
+            cursor: pointer;
+            background-color: var(--color--secondary);
+            padding: 1rem;
+            width: 5px;
+            position: relative;
+            height: 5px;
+            /* margin: 0.5rem auto; */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: var(--box--shadow-2);
+
+            i {
+                pointer-events: none;
+                color: white;
+            }
+        }
+    }
+
+    .info {
+        position: relative;
+        padding-left: 42px;
+        margin-top: -30px;
+
+        .job {
+            color: var(--color--grey-3);
+        }
+
+        .tl-duration {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background-color: var(--color--grey-6);
+            width: 50%;
+            height: 5%;
+            font-size: 0.7rem;
+            box-shadow: var(--box--shadow-2);
+            border-radius: 3px;
+            border: 2px solid var(--color--grey-5);
+        }
+
+        .space {
+            margin: 10px 0 5px 0;
+        }
+
+        .spc {
+            margin-top: -5px;
+        }
+
+        .discription {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 2rem;
+            font-size: 0.9rem;
+            color: var(--color--grey-3);
+        }
+    }
+}
+
+.run {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        background-color: var(--color--grey-5);
+        color: #ccc;
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+
+.cbutton {
+    background-color: transparent;
+
+
+    cursor: pointer;
+
+
+    &:hover {
+        background-color: rgba(35, 31, 31, 0.92);;
+        color: #ccc;
+    }
+}
+/* 
+.con_footer{
+    
+} */

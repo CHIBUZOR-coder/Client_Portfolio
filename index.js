@@ -6,11 +6,14 @@ const nav_about = document.querySelector(".nav_about");
 const nav_portfolio = document.querySelector(".nav_portfolio");
 const nav_service = document.querySelector(".nav_service");
 const nav_skill = document.querySelector(".nav_skill");
+ const nav_timeline = document.querySelector(".nav_timeline");
 const abtn = document.querySelector(".abtn");
 const hbtn = document.querySelector(".hbtn");
 const btn = document.querySelectorAll(".btn");
 const pbtn = document.querySelector(".port");
 const sbtn = document.querySelector(".sbtn");
+const tbtn = document.querySelector(".tbtn");
+const cbtn = document.querySelector(".cbtn");
 const skcbtn = document.querySelector(".skcbtn");
 const home_btn = document.querySelectorAll(".rsp");
 const socials = document.querySelectorAll('.social');
@@ -71,6 +74,32 @@ skcbtn.addEventListener("click", () => {
   }
 });
 
+
+tbtn.addEventListener("click", () => {
+  if (nav_timeline.classList.contains("hidden")) {
+    nav_timeline.classList.remove("hidden");
+    nav_timeline.classList.add("block");
+  } else {
+    nav_timeline.classList.add("hidden");
+    nav_timeline.classList.remove("block");
+  }
+});
+
+
+
+cbtn.addEventListener("click", () => {
+  if (nav_contact.classList.contains("hidden")) {
+    nav_contact.classList.remove("hidden");
+    nav_contact.classList.add("block");
+  } else {
+    nav_contact.classList.add("hidden");
+    nav_contact.classList.remove("block");
+  }
+});
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const body = document.body;
 
@@ -90,69 +119,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-// for (i = 0; i < lan_num.length; i++) {
-//   console.log(num[i].innerText);
-//   if(num[i].innerText < 50){
-//     lan_num[i].style.border = ' 2px solid red';
-//       num[i].style.color = "red";
-//   }
-//   else if (num[i].innerText >= 50 || num[i].innerText <= 60) {
-//     lan_num[i].style.border = "2px solid yellow";
-//      num[i].style.color = "yellow";
-//   }
-//   else{
-//       lan_num[i].style.border = '2px solid ${activeColor}';
-//       num[i].style.color = activeColor;
-
-//   }
-// }
-// for (i = 0; i < lan_num.length; i++) {
-//   console.log(lan_num[i].innerText); // Change to lan_num
-//   if (lan_num[i].innerText < 50) {
-//     lan_num[i].style.border = "2px solid red";
-//     lan_num[i].style.color = "red";
-//   } else if (lan_num[i].innerText >= 50 && lan_num[i].innerText <= 60) {
-//     lan_num[i].style.border = "2px solid yellow";
-//     lan_num[i].style.color = "yellow";
-//   } else {
-//     lan_num[i].style.border = `2px solid ${activeColor}`; // Fix template literal
-//     lan_num[i].style.color = activeColor;
-//   }
-// }
-
-
-
-// for (i = 0; i < lan_num.length; i++) {
-//   console.log(lan_num[i].innerText);
-//   if (lan_num[i].innerText < 50) {
-//     lan_num[i].style.border = "2px solid red";
-//     lan_num[i].style.color = "red";
-//   } else if (lan_num[i].innerText > 50 && lan_num[i].innerText <= 60) {
-//     lan_num[i].style.border = "2px solid yellow";
-//     lan_num[i].style.color = "yellow";
-//   } else {
-//     lan_num[i].style.border = `2px solid ${activeColor}`;
-//     lan_num[i].style.color = activeColor;
-//   }
-// }
-
-
-
-
 for (let i = 0; i < lan_num.length; i++) {
   const currentValue = parseInt(lan_num[i].innerText); // Ensure the value is parsed as an integer
   console.log(currentValue);
 
   if (currentValue < 50) {
-    lan_num[i].style.border = "2px solid red";
-    lan_num[i].style.color = "red";
+    lan_num[i].style.border = "3px solid red";
+    num[i].style.color = "red";
   } else if (currentValue >= 50 && currentValue <= 60) {
-    lan_num[i].style.border = "2px solid yellow";
-    lan_num[i].style.color = "yellow";
+    lan_num[i].style.border = "3px solid yellow";
+    num[i].style.color = "yellow";
   } else {
-    lan_num[i].style.border = `2px solid ${activeColor}`;
-    lan_num[i].style.color = activeColor;
+    lan_num[i].style.border = `3px solid ${activeColor}`;
+    num[i].style.color = activeColor;
   }
 }
 
